@@ -37,6 +37,7 @@ canvas {
     width: 500;
     height: 500;
     display: block;
+    border: 1px solid black;
 }
 
 section.controls{
