@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Conway's Game of Life</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+
+    <h1>Conway's Game of Life</h1>
+
+    <h2>Rules of the game:</h2>
+    <ol>
+        <li>Any live cell with fewer than two live neighbors dies, as if by under population.</li>
+        <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+        <li>Any live cell with more than three live neighbors dies, as if by overpopula</li>
+        <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+    </ol>
+
+
+    <p>The simulation below was created for the MagmaHackers challenge.  The Start button begins the simulation, while the Pause button pauses the simulation, which can be resumed by either pressing Start or Resume. The Reset button resets the population randomly.  For this simulation the population is randomly set, for now it can't be set manually.</p>
+
+    <section class="grid">
+            <canvas id="myCanvas" width="500" height="500"></canvas>
+    </section>
+    <section class="controls">
+            <button id="buttonStart" class="btn">Start</button>
+            <button id="buttonPause" class="btn">Pause</button>
+            <button id="buttonReset" class="btn">Reset</button>
+    </section>
+
+
+    <script src="gameOfLife.js"></script>
+
+</body>
+</html>
